@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('icons\\bg2.jpg');
+    background-size: cover;
+    background-position : center;
+    background-repeat: no-repeat;
+}
+.image-container {
+    
+    width: 30%;
+    margin-left: auto;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+
+}
+.image{
+    border: 1px solid #0e0e0e;
+    border-radius: 95%;
+    width : 100%;
+    height: auto;
+    padding: 5px;
+    margin-top: 5px;
+  
+}
+.image:hover {
+    box-shadow: 0 0 2px 1px rgba(5, 40, 194, 0.5);
+}
+.icons{
+    height: 30px;
+    width: 30px;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+.name{
+    text-align: center;
+    font-style: bold;
+    font-family: Lucida Handwriting;
+    margin-left: 150px;
+}
+.description{
+    text-align : center;
+    font-family: Garamond;
+    margin-left: 150px;
+
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px blue;
+    border: 2px solid white;
+    display: inline;
+    padding: 8px; 
+    border-radius: 5px;
+    background-color: #f4f0f0;
+    color:rgb(7, 7, 7);
+}
+section {
+    padding: 2em;
+    margin: 2em 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+section h2 {
+    margin-top: 0;
+    color:#0e0e0e;
+    font-family: Cambria;
+}
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+    
+
+#skills ul li {
+    background: #f4f0f0;
+    color: #333;
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0.2em;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+   
+.projects-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+   
+}
+    
+.project-img{
+    height: 200px;
+    width: auto;
+    
+
+}
+.project {
+    margin: 20px;
+    border-top: 1px solid #eee;
+    padding: 1em 0;
+    display : flex;
+    flex-direction: column;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: #0e0e0e;
+    border-width: 10px;
+    height: 300px;
+    
+    
+}
+.project h3 {
+    margin-top: 0px;
+    text-align : center;
+   
+    
+}
+.project button {
+    margin: 0.5em 0;
+    text-align: center;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   padding-bottom: 10px;
+    
+}
+.project button:hover{
+    color:rgb(7, 7, 7);
+}
+.project a:hover{
+    color: rgb(148, 207, 247);
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+#contact form label {
+    margin-top: 0.5em;
+}
+#contact form input,
+#contact form textarea {
+    padding: 0.5em;
+    margin-top: 0.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#contact form input[type="submit"] {
+    margin-top: 1em;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover {
+    background: #555;
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+}
+.info{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Courier New';
+
+}
+.cv{
+    
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    display: inline-block;
+    animation: pulse 2s infinite;
+   
+}
+.cv i{
+    vertical-align: middle;
+    margin-right: 8px; 
+    position: relative;
+    
+    
+}
+.cv:hover {
+    
+    background-color: #0056b3;
+    color: black;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+#lbyl {
+    font-size: 24px;
+    font-family: 'Courier New';
+    white-space: pre-wrap; /* Preserve whitespace */
+}
+
+.lg-icon{
+    width: 30px;
+    height : auto;
+    padding: 5px;
+    margin: 5px;
+    
+
+}

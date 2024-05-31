@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title> Protfolio</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="E:/myportfolio/Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="d-flex flex-row">
+        <div>
+            <h1 class="name">Kavya Yamsani</h1>
+            <p class="description">Passionate Techie with strong problem-solving skills</p>
+            <br><br><br>
+            <div id="lbyl"></div>
+            <a href="resume_kavya15.pdf" class="cv" target="_blank" download><i class="material-icons">attachment</i>DOWNLOAD CV</a>
+        </div>
+        <div class="image-container">
+            <a target="_blank" href="E:\myportfolio\image.jpeg">
+                <img src="E:\myportfolio\image.jpeg" alt="image" class="image"/>
+            </a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const text = "This is my official portfolio website to show all details and work.";
+            const displayElement = document.getElementById('lbyl');
+            let index = 0;
+
+            function nextElement() {
+                if (index < text.length) {
+                    displayElement.textContent += text[index];
+                    index++;
+                    setTimeout(nextElement, 50); 
+                }
+            }
+
+            nextElement();
+        });
+    </script>
+   
+    <section id="about">
+        <h2> About</h2>
+        <p class="about">
+            I am a Computer Science Engineering (CSE) graduate with a robust foundation in both theoretical and practical aspects of technology. My academic journey has equipped me with a diverse skill set and a keen interest in innovative problem-solving, particularly in the fields of machine learning and web development.
+            
+            During my studies, I have gained proficiency in various programming languages and software development methodologies. My passion for machine learning involves applying advanced algorithms to analyze and interpret complex data, driving insights and predictive accuracy.
+            
+            In web development, I specialize in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and various backend technologies. My work emphasizes seamless user experiences and efficient database management.
+            
+            I am enthusiastic about leveraging my expertise to contribute to cutting-edge projects and drive technological advancements. Whether working independently or as part of a team, I am dedicated to delivering high-quality solutions and fostering innovation.
+            
+        </p>
+
+    </section>
+    <section id="skills">
+        <h2> Skills </h2>
+        <ul>
+            <li><img src="E:\myportfolio\icons\python-icon-gl.png"class="icons"/> Python</li>
+            <li><img src="E:\myportfolio\icons\java-icon.png"class="icons"/> Java</li>
+            <li><img src="E:\myportfolio\icons\html-icon.png"class="icons"/> HTML</li>
+            <li><img src="E:\myportfolio\icons\css-icon.png"class="icons"/> CSS</li>
+            <li> <img src="E:\myportfolio\icons\javascript-icon.png"class="icons"/> JavaScript </li>
+            <li><img src="E:\myportfolio\icons\mysql-icon.png"class="icons"/> MySQL</li>
+            <li><img src="E:\myportfolio\icons\mongodb-icon.png"class="icons"/> MongoDB</li>
+            <li><img src="E:\myportfolio\icons\machinelearning-icon.jpg"class="icons"/> Machine Learning</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2> Projects</h2>
+      <div class="projects-list">
+        <div class="project">
+            <img src="E:\myportfolio\icons\fake-newsavif.avif" alt="project-img" class="project-img"/>
+            <h3>Fake News Detection System (ML)</h3>
+            <button type="button" class="btn btn-dark"> <a href="https://github.com/ykavya5/Fakenews-detectionsystem-using-ml" target="_blank"><strong>GitHub Link</strong></a></button>
+
+       </div>
+       <div class="project">
+        <img src="E:\myportfolio\icons\loan-approval.jpg" alt="loan-approval-mg" class="project-img"/>
+        <h3>Loan Approval Prediction (ML)</h3>
+        <button type="button" class="btn btn-dark"> <a href="https://github.com/ykavya5/loanapproval-project-using-ml" target="_blank"><strong>GitHub Link</strong></a></button>
+        
+   </div>
+   <div class ="project">
+    <img src="E:\myportfolio\icons\ecommerce_img.jpg" alt="project_img" class="project-img"/>
+    <h3> E-commerce Web Application </h3>
+   <button type="button" class="btn btn-dark"><a href="https://github.com/ykavya5/E-commerce-website-Django" target="_blank"><strong>GitHub Link</strong></a></button>
+   </div>
+   </div>
+   </section>
+   <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let's work together! Feel free to reach out to me via email at <i class="glyphicon glyphicon-envelope"></i><a href="mailto:yamsanikavya15@gmail.com">    yamsanikavya15@gmail.com</a>.</p>
+    <!--form action="https://formspree.io/f/{your-form-id}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="submit" value="Send">
+    </form-->
+    <div class="d-flex flex-row">
+        <a href="https://www.linkedin.com/in/kavyayamsani/" target="_blank"> <img src="icons/LinkedIn_icon.svg.png" class="lg-icon"/></a>
+        <a href="https://github.com/ykavya5/" target="_blank"> <img src="icons/github-icon.png" class="lg-icon" /> </a>
+ </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Kavya's Portfolio - Developed by Kavya Yamsani</p>
+</footer>
+    
+</body>
+</html>
