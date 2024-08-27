@@ -1,43 +1,56 @@
 <html>
-    <head>
-        <title> Protfolio</title>
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<head>
+    <title> Protfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#internships">Internships</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="d-flex flex-row">
+    <div class="d-flex ">
         <div>
             <h1 class="name">Kavya Yamsani</h1>
             <p class="description">Passionate Techie with strong problem-solving skills</p>
             <br><br><br>
             <div id="lbyl"></div>
-            <a href="resume_kavya15.pdf" class="cv" target="_blank" download><i class="material-icons">attachment</i>DOWNLOAD CV</a>
+            <a href="resume_kavya15.pdf" class="cv" target="_blank" download><i
+                    class="material-icons">attachment</i>DOWNLOAD CV</a>
         </div>
         <div class="image-container">
-            
-                <img src="icons/image.jpeg" alt="image" class="image"/>
-            
+
+            <img src="icons/image.jpeg" alt="image" class="image" />
+
         </div>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const text = "This is my official portfolio website to show all details and work.";
             const displayElement = document.getElementById('lbyl');
             let index = 0;
@@ -46,67 +59,163 @@
                 if (index < text.length) {
                     displayElement.textContent += text[index];
                     index++;
-                    setTimeout(nextElement, 50); 
+                    setTimeout(nextElement, 50);
                 }
             }
 
             nextElement();
         });
     </script>
-   
+
     <section id="about">
         <h2> About</h2>
         <p class="about">
-            I am a Computer Science Engineering (CSE) graduate with a robust foundation in both theoretical and practical aspects of technology. My academic journey has equipped me with a diverse skill set and a keen interest in innovative problem-solving, particularly in the fields of machine learning and web development.
-            
-            During my studies, I have gained proficiency in various programming languages and software development methodologies. My passion for machine learning involves applying advanced algorithms to analyze and interpret complex data, driving insights and predictive accuracy.
-            
-            In web development, I specialize in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and various backend technologies. My work emphasizes seamless user experiences and efficient database management.
-            
-            I am enthusiastic about leveraging my expertise to contribute to cutting-edge projects and drive technological advancements. Whether working independently or as part of a team, I am dedicated to delivering high-quality solutions and fostering innovation.
-            
+            I am a Computer Science Engineering (CSE) graduate with a robust foundation in both theoretical and
+            practical aspects of technology. My academic journey has equipped me with a diverse skill set and a keen
+            interest in innovative problem-solving, particularly in the fields of machine learning and web development.
+
+            During my studies, I have gained proficiency in various programming languages and software development
+            methodologies. My passion for machine learning involves applying advanced algorithms to analyze and
+            interpret complex data, driving insights and predictive accuracy.
+
+            In web development, I specialize in creating responsive, user-friendly websites using HTML, CSS, JavaScript,
+            and various backend technologies. My work emphasizes seamless user experiences and efficient database
+            management.
+
+            I am enthusiastic about leveraging my expertise to contribute to cutting-edge projects and drive
+            technological advancements. Whether working independently or as part of a team, I am dedicated to delivering
+            high-quality solutions and fostering innovation.
+
         </p>
 
     </section>
+    <section id="internships">
+        <h2>Internships</h2>
+        <div class="internship-container">
+            <div class="internship">
+                <h3>Company Name: <span>Xzect Labs Private Limited</span></h3>
+                <p><em>Worked as a Full Stack Intern as part of the Xzect Open Source Program 2024. During my time at Xzect, I contributed to various projects, including the development of a CyberSecurity chatbot and a landing webpage with dynamic features.</em></p>
+                <h4>Duration: <span>3rd June - 2nd Aug 2024</span></h4>
+                <h4>Key Learnings:</h4>
+                <ul>
+                    <li>Developed a deep understanding of web technologies like HTML, CSS, JS, React, and Next.js.</li>
+                    <li>Gained exposure to large language models (LLMs).</li>
+                    <li>Implemented responsive design techniques to ensure the landing page performed well across all devices.</li>
+                    <li>Built features for dark and light modes, enhancing user experience and accessibility.</li>
+                </ul>
+                <h4>Projects:</h4>
+                <div>
+                    <h4><span>CyberSecurity Chatbot</span></h4>
+                    <p>Developed a chatbot focusing on enhancing online security through interactive conversations and recommendations.</p>
+                </div>
+                <div>
+                    <h4><span>Landing Webpage</span></h4>
+                    <p>Designed and developed a landing webpage using HTML, CSS, and JavaScript with features including dark and light modes, and responsiveness across all devices.</p>
+                </div>
+            </div>
+            <hr />
+            <div class="internship">
+                <h3>Company Name: <span>OCTAZEN SOFTWARE SOLUTIONS</span></h3>
+                <p><em>Worked as a Python Developer, focusing on building and optimizing machine learning models for a loan approval system. This role provided hands-on experience in applying data science principles to solve real-world problems and strengthened my understanding of Python’s capabilities in the context of machine learning.</em></p>
+                <h4>Duration: <span>15th May - 15th July 2022</span></h4>
+                <h4>Key Learnings:</h4>
+                <ul>
+                    <li>Mastered Python programming concepts, particularly Object-Oriented Programming (OOPs).</li>
+                    <li>Gained proficiency in essential data science tools and machine learning libraries such as Pandas, NumPy, and Scikit-learn.</li>
+                    <li>Implemented a machine learning model to automate and improve the accuracy of loan approval processes.</li>
+                </ul>
+                <h4>Project Name: <span>Loan Approval Project Using Machine Learning</span></h4>
+            </div>
+        </div>
+    </section>
+    
+    
+    
     <section id="skills">
         <h2> Skills </h2>
         <ul>
-            <li><img src="icons/python-icon-gl.png"class="icons"/> Python</li>
-            <li><img src="icons/java-icon.png"class="icons"/> Java</li>
-            <li><img src="icons/html-icon.png"class="icons"/> HTML</li>
-            <li><img src="icons/css-icon.png"class="icons"/> CSS</li>
-            <li> <img src="icons/javascript-icon.png"class="icons"/> JavaScript </li>
-            <li><img src="icons/mysql-icon.png"class="icons"/> MySQL</li>
-            <li><img src="icons/mongodb-icon.png"class="icons"/> MongoDB</li>
-            <li><img src="icons/machinelearning-icon.jpg"class="icons"/> Machine Learning</li>
+            <li><img src="icons/python-icon-gl.png" class="icons" /> Python</li>
+            <!-- <li><img src="icons/java-icon.png"class="icons"/> Java</li> -->
+            <li><img src="icons/html-icon.png" class="icons" /> HTML</li>
+            <li><img src="icons/css-icon.png" class="icons" /> CSS</li>
+            <li> <img src="icons/javascript-icon.png" class="icons" /> JavaScript </li>
+            <li><img src="icons/mysql-icon.png" class="icons" /> MySQL</li>
+            <!-- <li><img src="icons/mongodb-icon.png"class="icons"/> MongoDB</li> -->
+            <li><img src="icons/machinelearning-icon.jpg" class="icons" /> Machine Learning</li>
         </ul>
     </section>
     <section id="projects">
         <h2> Projects</h2>
-      <div class="projects-list">
-        <div class="project">
-            <img src="icons/fake-newsavif.avif" alt="project-img" class="project-img"/>
-            <h3>Fake News Detection System (ML)</h3>
-            <button type="button" class="btn btn-dark"> <a href="https://github.com/ykavya5/Fakenews-detectionsystem-using-ml" target="_blank"><strong>GitHub Link</strong></a></button>
+        <div class="projects-list">
+            <div class="project">
+                <img src="icons/fake-newsavif.avif" alt="project-img" class="project-img" />
+                <h3>Fake News Detection System (ML)</h3>
+                <button type="button" class="btn btn-dark"> <a
+                        href="https://github.com/ykavya5/Fakenews-detectionsystem-using-ml"
+                        target="_blank"><strong>GitHub Link</strong></a></button>
 
-       </div>
-       <div class="project">
-        <img src="icons/loan-approval.jpg" alt="loan-approval-mg" class="project-img"/>
-        <h3>Loan Approval Prediction (ML)</h3>
-        <button type="button" class="btn btn-dark"> <a href="https://github.com/ykavya5/loanapproval-project-using-ml" target="_blank"><strong>GitHub Link</strong></a></button>
-        
-   </div>
-   <div class ="project">
-    <img src="icons/ecommerce_img.jpg" alt="project_img" class="project-img"/>
-    <h3> E-commerce Web Application </h3>
-   <button type="button" class="btn btn-dark"><a href="https://github.com/ykavya5/E-commerce-website-Django" target="_blank"><strong>GitHub Link</strong></a></button>
-   </div>
-   </div>
-   </section>
-   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Let's work together! Feel free to reach out to me via email at <i class="glyphicon glyphicon-envelope"></i><a href="mailto:yamsanikavya15@gmail.com">    yamsanikavya15@gmail.com</a>.</p>
-    <!--form action="https://formspree.io/f/{your-form-id}" method="post">
+            </div>
+            <div class="project">
+                <img src="icons/loan-approval.jpg" alt="loan-approval-mg" class="project-img" />
+                <h3>Loan Approval Prediction (ML)</h3>
+                <button type="button" class="btn btn-dark"> <a
+                        href="https://github.com/ykavya5/loanapproval-project-using-ml" target="_blank"><strong>GitHub
+                            Link</strong></a></button>
+
+            </div>
+            <div class="project">
+                <img src="icons/ecommerce_img.jpg" alt="project_img" class="project-img" />
+                <h3> E-commerce Web Application </h3>
+                <button type="button" class="btn btn-dark"><a
+                        href="https://github.com/ykavya5/E-commerce-website-Django" target="_blank"><strong>GitHub
+                            Link</strong></a></button>
+            </div>
+            <div class="project">
+                <img src="icons/dappr-static.png" alt="project_img" class="project-img" />
+                <h3> Static Web Application </h3>
+                <button type="button" class="btn btn-dark"><a href="https://github.com/ykavya5/cvt-minor-2"
+                        target="_blank"><strong>GitHub Link</strong></a></button>
+            </div>
+            <div class="project">
+                <img src="icons/responsive-webpage.png" alt="project_img" class="project-img" />
+                <h3> Responsive Web Page </h3>
+                <button type="button" class="btn btn-dark"><a href="https://github.com/ykavya5/Responsive-webpage"
+                        target="_blank"><strong>GitHub Link</strong></a></button>
+            </div>
+            <div class="project">
+                <img src="icons/calculator.png" alt="project_img" class="project-img" />
+                <h3> Calculator Application </h3>
+                <button type="button" class="btn btn-dark"><a href="https://github.com/ykavya5/cvt-minor-3"
+                        target="_blank"><strong>GitHub Link</strong></a></button>
+            </div>
+            <div class="project">
+                <img src="icons/game.png" alt="project_img" class="project-img" />
+                <h3> Rock Paper Scissor Game </h3>
+                <button type="button" class="btn btn-dark"><a href="https://github.com/ykavya5/Rock-Paper_scissor"
+                        target="_blank"><strong>GitHub Link</strong></a></button>
+            </div>
+            <div class="project">
+                <img src="icons/internship-task.png" alt="project_img" class="project-img" />
+                <h3> Next Promotions Webpage </h3>
+                <button type="button" class="btn btn-dark"><a href="https://github.com/ykavya5/xzect-task-1"
+                        target="_blank"><strong>GitHub Link</strong></a></button>
+            </div>
+            <div class="project">
+                <img src="icons/chatbot.png" alt="project_img" class="project-img" />
+                <h3> CyberSecurity Chatbot </h3>
+                <button type="button" class="btn btn-dark"><a href="https://github.com/ykavya5/XZECT-OSPE-AI-Chatbots"
+                        target="_blank"><strong>GitHub Link</strong></a></button>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's work together! Feel free to reach out to me via email at <i class="glyphicon glyphicon-envelope"></i><a
+                href="mailto:yamsanikavya15@gmail.com"> yamsanikavya15@gmail.com</a>.</p>
+        <!--form action="https://formspree.io/f/{your-form-id}" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label>
@@ -117,15 +226,18 @@
         <textarea id="message" name="message" rows="4" required></textarea>
         <input type="submit" value="Send">
     </form-->
-    <div class="d-flex flex-row">
-        <a href="https://www.linkedin.com/in/kavyayamsani/" target="_blank"> <img src="icons/LinkedIn_icon.svg.png" class="lg-icon"/></a>
-        <a href="https://github.com/ykavya5/" target="_blank"> <img src="icons/github-icon.png" class="lg-icon" /> </a>
- </div>
-</section>
+        <div class="d-flex-1 flex-row">
+            <a href="https://www.linkedin.com/in/kavyayamsani/" target="_blank"> <img src="icons/LinkedIn_icon.svg.png"
+                    class="lg-icon" /></a>
+            <a href="https://github.com/ykavya5/" target="_blank"> <img src="icons/github-icon.png" class="lg-icon" />
+            </a>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Kavya's Portfolio - Developed by Kavya Yamsani</p>
-</footer>
-    
+    <footer>
+        <p>&copy; 2024 Kavya's Portfolio - Developed by Kavya Yamsani</p>
+    </footer>
+
 </body>
+
 </html>

@@ -6,88 +6,109 @@ body {
     background-color: #f4f4f4;
     background-image: url('icons\\bg2.jpg');
     background-size: cover;
-    background-position : center;
+    background-position: center;
     background-repeat: no-repeat;
+    font-size: 2em;
 }
+
 .image-container {
-    
+
     width: 30%;
     margin-left: auto;
 }
+
 .d-flex {
     display: flex;
     align-items: center;
     padding: 1em;
 
 }
-.image{
+.d-flex-1{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.image {
     border: 1px solid #0e0e0e;
     border-radius: 95%;
-    width : 100%;
+    width: 100%;
     height: auto;
     padding: 5px;
     margin-top: 5px;
-  
+
 }
+
 .image:hover {
     box-shadow: 0 0 2px 1px rgba(5, 40, 194, 0.5);
 }
-.icons{
+
+.icons {
     height: 30px;
     width: 30px;
 }
+
 header {
     background: #333;
     color: #fff;
     padding: 1em 0;
     text-align: center;
 }
-.name{
+
+.name {
     text-align: center;
     font-style: bold;
     font-family: Lucida Handwriting;
     margin-left: 150px;
 }
-.description{
-    text-align : center;
+
+.description {
+    text-align: center;
     font-family: Garamond;
     margin-left: 150px;
 
 }
+
 header h1 {
     margin: 0;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 10px;
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
     text-shadow: 2px 2px 5px blue;
     border: 2px solid white;
     display: inline;
-    padding: 8px; 
+    padding: 8px;
     border-radius: 5px;
     background-color: #f4f0f0;
-    color:rgb(7, 7, 7);
+    color: rgb(7, 7, 7);
 }
+
 section {
     padding: 2em;
     margin: 2em 0;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 section h2 {
     margin-top: 0;
-    color:#0e0e0e;
+    color: #0e0e0e;
     font-family: Cambria;
 }
+
 #skills ul {
     list-style: none;
     padding: 0;
@@ -95,7 +116,7 @@ section h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-    
+
 
 #skills ul li {
     background: #f4f0f0;
@@ -108,41 +129,44 @@ section h2 {
     align-items: center;
     gap: 0.5em;
 }
-   
-.projects-list{
+
+.projects-list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap:wrap;
-   
-}
-    
-.project-img{
-    height: 200px;
-    width: auto;
-    
+    flex-wrap: wrap;
 
 }
+
+.project-img {
+    height: 200px;
+    width: 400px;
+
+
+}
+
 .project {
     margin: 20px;
     border-top: 1px solid #eee;
     padding: 1em 0;
-    display : flex;
+    display: flex;
     flex-direction: column;
     border-style: ridge;
     border-radius: 10px;
     border-color: #0e0e0e;
     border-width: 10px;
     height: 300px;
-    
-    
+
+
 }
+
 .project h3 {
     margin-top: 0px;
-    text-align : center;
-   
-    
+    text-align: center;
+
+
 }
+
 .project button {
     margin: 0.5em 0;
     text-align: center;
@@ -151,22 +175,27 @@ section h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-   padding-bottom: 10px;
-    
+    padding-bottom: 10px;
+
 }
-.project button:hover{
-    color:rgb(7, 7, 7);
+
+.project button:hover {
+    color: rgb(7, 7, 7);
 }
-.project a:hover{
+
+.project a:hover {
     color: rgb(148, 207, 247);
 }
+
 #contact form {
     display: flex;
     flex-direction: column;
 }
+
 #contact form label {
     margin-top: 0.5em;
 }
+
 #contact form input,
 #contact form textarea {
     padding: 0.5em;
@@ -174,6 +203,7 @@ section h2 {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 #contact form input[type="submit"] {
     margin-top: 1em;
     background: #333;
@@ -185,20 +215,23 @@ section h2 {
 #contact form input[type="submit"]:hover {
     background: #555;
 }
+
 footer {
     text-align: center;
     padding: 1em 0;
     background: #333;
     color: #fff;
 }
-.info{
+
+.info {
     text-align: center;
     font-style: italic;
     font-family: 'Courier New';
 
 }
-.cv{
-    
+
+.cv {
+
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -207,36 +240,295 @@ footer {
     color: white;
     display: inline-block;
     animation: pulse 2s infinite;
-   
+
 }
-.cv i{
+
+.cv i {
     vertical-align: middle;
-    margin-right: 8px; 
+    margin-right: 8px;
     position: relative;
-    
-    
+
+
 }
+
 .cv:hover {
-    
+
     background-color: #0056b3;
     color: black;
 }
+
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
+
 #lbyl {
     font-size: 24px;
     font-family: 'Courier New';
-    white-space: pre-wrap; /* Preserve whitespace */
+    white-space: pre-wrap;
+    /* Preserve whitespace */
 }
 
-.lg-icon{
+.lg-icon {
     width: 30px;
-    height : auto;
+    height: auto;
     padding: 5px;
     margin: 5px;
-    
 
+
+}
+.internship-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.internship {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.internship h3, .internship h4 {
+    margin: 10px 0;
+}
+
+.internship span {
+    font-weight: bold;
+}
+
+.internship ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+@media (max-width: 768px) {
+
+    header {
+        padding: 1em 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+    }
+    .internship-container {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .internship {
+        width: 100%;
+    }
+    .d-flex {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .image {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .name {
+        font-size: 2em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.2em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #lbyl {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .cv {
+        font-size: 1em;
+        padding: 8px 16px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 1em;
+        margin: 1em 0;
+    }
+
+    section h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills ul li {
+        font-size: 1em;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    .project-img {
+        height: 150px;
+        width: auto;
+    }
+
+    .lg-icon {
+        width: 30px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+
+
+@media (min-width: 2560px) {
+
+    header {
+        height: 10vh;
+    }
+
+    nav ul {
+
+        margin-top: 1em;
+
+    }
+
+    nav ul li {
+        margin: 0px 1em;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        height: 5vh;
+        width: 10vw;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5%;
+        font-size: 2em;
+    }
+
+    .image-container {
+        width: 25%;
+    }
+
+    .d-flex {
+        padding: 2em;
+    }
+
+    .image {
+        border-radius: 50%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .name {
+        font-size: 4em;
+        margin-left: 200px;
+    }
+
+    .description {
+        font-size: 2em;
+        margin-left: 200px;
+    }
+
+    #lbyl {
+        font-size: 2em;
+    }
+
+    .cv {
+        height: 3vh;
+    }
+
+    section {
+        padding: 3em;
+        margin: 3em 0;
+    }
+
+    section h2 {
+        font-size: 4.5em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    #skills ul li {
+        padding: 1em;
+        font-size: 2em;
+    }
+
+    .projects-list .project {
+        height: 400px;
+    }
+
+    .project h3 {
+        font-size: 1.8em;
+    }
+
+    .project button {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .lg-icon {
+        width: 40px;
+    }
+
+    footer p {
+        font-size: 2em;
+    }
 }
